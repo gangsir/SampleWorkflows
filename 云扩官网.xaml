@@ -1,0 +1,93 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="RehostedWorkflowDesigner.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="RehostedWorkflowDesigner.Workflow_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:fab="clr-namespace:Friday.ActivityLibrary.BasicActivities;assembly=ActivityLibrary"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_4">
+        <fab:OpenActivity DisplayName="OPEN" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="Open http://www.encootech.com/" PageUrl="http://www.encootech.com/" TabId="342" />
+        <FlowStep.Next>
+          <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+            <fab:ClickActivity AbsoluteXPath="id(&quot;logoandnav&quot;)/nav[1]/a[1]/img[1]" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-10/8ea48676-6b4b-4f53-97e6-c3f5e0adf921.jpg" DisplayName="CLICK" sap2010:WorkflowViewState.IdRef="ClickActivity_1" Operation="Click Button " TabId="342" XpathList="[&quot;//*[@id='logoAndNav']//nav[contains(concat(' ',normalize-space(@class),' '), ' js-mega-menu ')][contains(concat(' ',normalize-space(@class),' '), ' navbar ')][contains(concat(' ',normalize-space(@class),' '), ' navbar-expand-md ')][contains(concat(' ',normalize-space(@class),' '), ' u-header__navbar ')][contains(concat(' ',normalize-space(@class),' '), ' hs-menu-initialized ')][contains(concat(' ',normalize-space(@class),' '), ' hs-menu-horizontal ')]//a[contains(concat(' ',normalize-space(@class),' '), ' navbar-brand ')][contains(concat(' ',normalize-space(@class),' '), ' u-header__navbar-brand ')][@href^='/'][@aria-label='Front']//img[@src='/img/logos/encoo-logo-white.png'][@alt='Logo'][@width='160px']&quot;]" />
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+                <fab:ClickActivity AbsoluteXPath="id(&quot;content&quot;)/div[2]/div[1]/div[1]/div[1]/a[1]" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-10/2918d865-3647-4d29-94cd-e982643d05a1.jpg" DisplayName="CLICK" sap2010:WorkflowViewState.IdRef="ClickActivity_2" Operation="Click Button &quot;Learn More&quot;" TabId="342" XpathList="[&quot;//*[@id='content']//div[contains(concat(' ',normalize-space(@class),' '), ' container ')][contains(concat(' ',normalize-space(@class),' '), ' u-space-1 ')]//div[contains(concat(' ',normalize-space(@class),' '), ' row ')][contains(concat(' ',normalize-space(@class),' '), ' justify-content-between ')][contains(concat(' ',normalize-space(@class),' '), ' align-items-center ')]//div[contains(concat(' ',normalize-space(@class),' '), ' col-lg-5 ')][contains(concat(' ',normalize-space(@class),' '), ' mb-7 ')][contains(concat(' ',normalize-space(@class),' '), ' mb-lg-0 ')]//div[contains(concat(' ',normalize-space(@class),' '), ' pr-md-4 ')]//a[contains(concat(' ',normalize-space(@class),' '), ' btn ')][contains(concat(' ',normalize-space(@class),' '), ' btn-sm ')][contains(concat(' ',normalize-space(@class),' '), ' btn-primary ')][contains(concat(' ',normalize-space(@class),' '), ' u-btn-primary ')][contains(concat(' ',normalize-space(@class),' '), ' u-btn-wide ')][contains(concat(' ',normalize-space(@class),' '), ' transition-3d-hover ')][@href^='/']&quot;]" />
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+                    <fab:ClickActivity AbsoluteXPath="id(&quot;svgkeyfeatures&quot;)/div[1]/div[1]/a[1]" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-10/288689b9-4c38-4710-8b6f-cbe34487936a.jpg" DisplayName="CLICK" sap2010:WorkflowViewState.IdRef="ClickActivity_3" Operation="Click Button &quot;Explore now&quot;" TabId="342" XpathList="[&quot;//*[@id='SVGkeyFeatures']//div[contains(concat(' ',normalize-space(@class),' '), ' card ')][contains(concat(' ',normalize-space(@class),' '), ' shadow ')][contains(concat(' ',normalize-space(@class),' '), ' mb-3 ')][contains(concat(' ',normalize-space(@class),' '), ' mb-lg-0 ')]//div[contains(concat(' ',normalize-space(@class),' '), ' card-body ')][contains(concat(' ',normalize-space(@class),' '), ' p-4 ')]//a[contains(concat(' ',normalize-space(@class),' '), ' font-size-1 ')][@href^='/service/cloud']&quot;]" />
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <sads:DebugSymbol.Symbol>dylDOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zkupHmianlrpjnvZEueGFtbAULAyUPAgEBDgkOvAECAQURDRGoCAIBBBQRFKYLAgEDFxUX/AYCAQI=</sads:DebugSymbol.Symbol>
+  </Flowchart>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="OpenActivity_1" sap:VirtualizedContainerService.HintSize="209,53" />
+      <sap2010:ViewStateData Id="ClickActivity_1" sap:VirtualizedContainerService.HintSize="200,83" />
+      <sap2010:ViewStateData Id="ClickActivity_2" sap:VirtualizedContainerService.HintSize="200,83" />
+      <sap2010:ViewStateData Id="ClickActivity_3" sap:VirtualizedContainerService.HintSize="200,83" />
+      <sap2010:ViewStateData Id="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">50,530</av:Point>
+            <av:Size x:Key="ShapeSize">200,83</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">50,380</av:Point>
+            <av:Size x:Key="ShapeSize">200,83</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">150,463 150,530</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">50,230</av:Point>
+            <av:Size x:Key="ShapeSize">200,83</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">150,313 150,380</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">45.5,127.5</av:Point>
+            <av:Size x:Key="ShapeSize">209,53</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">150,180.5 150,230</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Flowchart_1" sap:VirtualizedContainerService.HintSize="614,649">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <av:Point x:Key="ShapeLocation">120,2.5</av:Point>
+            <av:Size x:Key="ShapeSize">60,75</av:Size>
+            <x:Double x:Key="Height">613</x:Double>
+            <av:PointCollection x:Key="ConnectorLocation">150,77.5 150,127.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="654,809" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

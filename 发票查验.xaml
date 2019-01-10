@@ -242,7 +242,7 @@
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">75,520</av:Point>
             <av:Size x:Key="ShapeSize">210,100</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">285,570 315,570 315,190 385,190</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">285,570 332,570 332,190 385,190</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
@@ -294,7 +294,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,841" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,961" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
