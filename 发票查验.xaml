@@ -161,7 +161,7 @@
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
     <x:Reference>__ReferenceID9</x:Reference>
-    <sads:DebugSymbol.Symbol>dw1DOlxFbXB0eS54YW1sAA==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dylDOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zlj5Hnpajmn6XpqowueGFtbBceA6UBDwIBASgJKLIBAgFTKw1FJgIBNEgRTiQCAS1RFVcoAgEmWhlgLAIBH2MdaTACARhsIXI8AgERdSV7OAIBCn4pfoQDAgEJgQEthQE1AgECQhNCXwIBTT0TPV0CAUc4EzhiAgFBLhMujAECATszEzNcAgE1SxdLWAIBLlQbVF0CASddH13CAQIBIGYjZnECARlvJ29xAgESeCt4bQIBC4MBMYMBiAECAQM=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -294,7 +294,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,961" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,841" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
