@@ -275,7 +275,7 @@
     <x:Reference>__ReferenceID22</x:Reference>
     <x:Reference>__ReferenceID23</x:Reference>
     <x:Reference>__ReferenceID24</x:Reference>
-    <sads:DebugSymbol.Symbol>dy1DOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zliJvlu7pPZG9v5a6i5oi3LnhhbWwwHQOXAg8CAQEfNB8+AgEDITMhNgIBAiUJJdgBAgF2KA0olgMCAXQrESuDAwIBci4VLpcHAgFxMRk1IQIBbDgdOKoDAgFrOyE/KQIBZkIlTTsCAV1QKfoBMwIBBCjGAijhAgIBdSu+AivLAgIBczMdM3sCAW09JT2DAQIBZ0orSp0BAgFiRStFnwECAV5TL1OgAQIBWVot+AE5AgEFXF1cYAIBBmAzYLQDAgFYYzdnPwIBUWo7avW1AQIBUG0/cUcCAUl0Q3TfEAIBSHdHfVoCAUGAAUuGAV4CATqJAU+PAWICATOSAVOYAWYCASybAVehAWoCASWkAVuqAW4CAR6tAV+tAaQRAgEdsAFjtAFrAgEWtwFnvQF6AgEPwAFrwAHsUAIBDsMBb8cBdwIBB2U7ZZIBAgFSb0NvmgECAUp6TXqWAQIBQoMBUYMBmQECATuMAVWMAZ8BAgE0lQFZlQGkAQIBLZ4BXZ4BpwECASanAWGnAa0BAgEfsgFnsgG+AQIBF7oBbboBugECARDFAXPFAcoBAgEI</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dy9DOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zliJvlu7pPZG9v5a6i5oi3djMueGFtbDAdA5cCDwIBAR80Hz4CAQMhMyE2AgECJQkl2AECAXYoDSiWAwIBdCsRK4MDAgFyLhUulwcCAXExGTUhAgFsOB04qgMCAWs7IT8pAgFmQiVNOwIBXVAp+gEzAgEEKMYCKOECAgF1K74CK8sCAgFzMx0zewIBbT0lPYMBAgFnSitKnQECAWJFK0WfAQIBXlMvU6ABAgFZWi34ATkCAQVcXVxgAgEGYDNgtAMCAVhjN2c/AgFRajtq9bUBAgFQbT9xRwIBSXRDdN8QAgFId0d9WgIBQYABS4YBXgIBOokBT48BYgIBM5IBU5gBZgIBLJsBV6EBagIBJaQBW6oBbgIBHq0BX60BpBECAR2wAWO0AWsCARa3AWe9AXoCAQ/AAWvAAexQAgEOwwFvxwF3AgEHZTtlkgECAVJvQ2+aAQIBSnpNepYBAgFCgwFRgwGZAQIBO4wBVYwBnwECATSVAVmVAaQBAgEtngFdngGnAQIBJqcBYacBrQECAR+yAWeyAb4BAgEXugFtugG6AQIBEMUBc8UBygECAQg=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -489,7 +489,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Flowchart_2" sap:VirtualizedContainerService.HintSize="1124,1697">
+      <sap2010:ViewStateData Id="Flowchart_2" sap:VirtualizedContainerService.HintSize="200,53">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -501,7 +501,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="291,205" />
+      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="200,53" />
       <sap2010:ViewStateData Id="FlowStep_100">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -594,7 +594,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="895,1136" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="829,738" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

@@ -159,7 +159,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="TypeActivity_4" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="ClickActivity_5" sap:VirtualizedContainerService.HintSize="210,82" />
+      <sap2010:ViewStateData Id="ClickActivity_5" sap:VirtualizedContainerService.HintSize="210,83" />
       <sap2010:ViewStateData Id="UserInputBoxActivity_1" sap:VirtualizedContainerService.HintSize="210,22">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -167,7 +167,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TypeActivity_5" sap:VirtualizedContainerService.HintSize="210,98" />
+      <sap2010:ViewStateData Id="TypeActivity_5" sap:VirtualizedContainerService.HintSize="210,100" />
       <sap2010:ViewStateData Id="ClickActivity_6" sap:VirtualizedContainerService.HintSize="210,82" />
       <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="210,22">
         <sap:WorkflowViewStateService.ViewState>
@@ -176,7 +176,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,1212">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,1215">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
