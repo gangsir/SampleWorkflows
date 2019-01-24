@@ -36,37 +36,37 @@
       <Variable x:TypeArguments="x:String" Name="veri" />
     </Flowchart.Variables>
     <Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_13">
-        <fab:OpenActivity DisplayName="打开浏览器" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" TabId="2073" />
+      <FlowStep x:Name="__ReferenceID9" sap2010:WorkflowViewState.IdRef="FlowStep_16">
+        <fao:VatInvoiceActivity DisplayName="识别发票信息" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_2">
+          <fao:VatInvoiceActivity.ImgPath>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">@"C:\temp\SampleWorkflows\data\invoice\ocr_test_image"+item+".JPG"</mca:CSharpValue>
+            </InArgument>
+          </fao:VatInvoiceActivity.ImgPath>
+          <fao:VatInvoiceActivity.InvoiceCode>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">num</mca:CSharpReference>
+            </OutArgument>
+          </fao:VatInvoiceActivity.InvoiceCode>
+          <fao:VatInvoiceActivity.InvoiceDate>
+            <OutArgument x:TypeArguments="s:DateTime">
+              <mca:CSharpReference x:TypeArguments="s:DateTime">invdate</mca:CSharpReference>
+            </OutArgument>
+          </fao:VatInvoiceActivity.InvoiceDate>
+          <fao:VatInvoiceActivity.InvoiceNum>
+            <OutArgument x:TypeArguments="x:String">
+              <mca:CSharpReference x:TypeArguments="x:String">code</mca:CSharpReference>
+            </OutArgument>
+          </fao:VatInvoiceActivity.InvoiceNum>
+          <fao:VatInvoiceActivity.TotalAmount>
+            <OutArgument x:TypeArguments="x:Decimal">
+              <mca:CSharpReference x:TypeArguments="x:Decimal">value</mca:CSharpReference>
+            </OutArgument>
+          </fao:VatInvoiceActivity.TotalAmount>
+        </fao:VatInvoiceActivity>
         <FlowStep.Next>
-          <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_14">
-            <fao:VatInvoiceActivity DisplayName="读取增值税发票信息" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_1">
-              <fao:VatInvoiceActivity.ImgPath>
-                <InArgument x:TypeArguments="x:String">
-                  <mca:CSharpValue x:TypeArguments="x:String">@"C:\temp\SampleWorkflows\data\invoice\ocr_test_image1.JPG"</mca:CSharpValue>
-                </InArgument>
-              </fao:VatInvoiceActivity.ImgPath>
-              <fao:VatInvoiceActivity.InvoiceCode>
-                <OutArgument x:TypeArguments="x:String">
-                  <mca:CSharpReference x:TypeArguments="x:String">num</mca:CSharpReference>
-                </OutArgument>
-              </fao:VatInvoiceActivity.InvoiceCode>
-              <fao:VatInvoiceActivity.InvoiceDate>
-                <OutArgument x:TypeArguments="s:DateTime">
-                  <mca:CSharpReference x:TypeArguments="s:DateTime">invdate</mca:CSharpReference>
-                </OutArgument>
-              </fao:VatInvoiceActivity.InvoiceDate>
-              <fao:VatInvoiceActivity.InvoiceNum>
-                <OutArgument x:TypeArguments="x:String">
-                  <mca:CSharpReference x:TypeArguments="x:String">code</mca:CSharpReference>
-                </OutArgument>
-              </fao:VatInvoiceActivity.InvoiceNum>
-              <fao:VatInvoiceActivity.TotalAmount>
-                <OutArgument x:TypeArguments="x:Decimal">
-                  <mca:CSharpReference x:TypeArguments="x:Decimal">value</mca:CSharpReference>
-                </OutArgument>
-              </fao:VatInvoiceActivity.TotalAmount>
-            </fao:VatInvoiceActivity>
+          <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_13">
+            <fab:OpenActivity DisplayName="打开浏览器" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" TabId="2073" />
             <FlowStep.Next>
               <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_11">
                 <fab:TypeActivity AbsoluteXPath="id(&quot;fpdm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/2d5f021d-466e-4f1d-b7bd-46ce6e8260a8.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_1" Operation="输入发票代码" TabId="2073" XpathList="[&quot;id(\&quot;fpdm\&quot;)&quot;]">
@@ -104,7 +104,7 @@
                               </fab:TypeActivity.Value>
                             </fab:TypeActivity>
                             <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID8" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                              <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_3">
                                 <fam:UserInputBoxActivity Title="{x:Null}" DisplayName="用户输入框" sap2010:WorkflowViewState.IdRef="UserInputBoxActivity_1" Prompt="请输入验证码">
                                   <fam:UserInputBoxActivity.Output>
                                     <OutArgument x:TypeArguments="x:String">
@@ -125,7 +125,7 @@
                                       <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
                                         <fab:ClickActivity AbsoluteXPath="id(&quot;checkfp&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/712e0cc6-b258-49b8-b02d-92c690edeea7.jpg" DisplayName="点击按钮" sap2010:WorkflowViewState.IdRef="ClickActivity_6" Operation="点击&quot;查 验&quot;按钮" TabId="2073" XpathList="[&quot;id(\&quot;checkfp\&quot;)&quot;]" />
                                         <FlowStep.Next>
-                                          <FlowStep x:Name="__ReferenceID9" sap2010:WorkflowViewState.IdRef="FlowStep_15">
+                                          <FlowStep x:Name="__ReferenceID8" sap2010:WorkflowViewState.IdRef="FlowStep_15">
                                             <Delay DisplayName="延时" sap2010:WorkflowViewState.IdRef="Delay_1">
                                               <InArgument x:TypeArguments="x:TimeSpan">
                                                 <mca:CSharpValue x:TypeArguments="x:TimeSpan">TimeSpan.FromSeconds(5)</mca:CSharpValue>
@@ -161,23 +161,23 @@
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
     <x:Reference>__ReferenceID9</x:Reference>
-    <sads:DebugSymbol.Symbol>dylDOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zlj5Hnpajmn6XpqowueGFtbBceA6UBDwIBASgJKLIBAgFTKw1FJgIBNEgRTiQCAS1RFVcoAgEmWhlgLAIBH2MdaTACARhsIXI8AgERdSV7OAIBCn4pfoQDAgEJgQEthQE1AgECQhNCXwIBTT0TPV0CAUc4EzhiAgFBLhMujAECATszEzNcAgE1SxdLWAIBLlQbVF0CASddH13CAQIBIGYjZnECARlvJ29xAgESeCt4bQIBC4MBMYMBiAECAQM=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dylDOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zlj5Hnpajmn6XpqowueGFtbBceA6UBDwIBASgJQiICATVFDUW2AQIBNEgRTiQCAS1RFVcoAgEmWhlgLAIBH2MdaTACARhsIXI8AgERdSV7OAIBCn4pfoQDAgEJgQEthQE1AgECPw8/WwIBTjoPOlkCAUg1DzVeAgFCKw8rjwECATwwDzBYAgE2SxdLWAIBLlQbVF0CASddH13CAQIBIGYjZnECARlvJ29xAgESeCt4bQIBC4MBMYMBiAECAQM=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="OpenActivity_1" sap:VirtualizedContainerService.HintSize="200,53" />
-      <sap2010:ViewStateData Id="VatInvoiceActivity_1" sap:VirtualizedContainerService.HintSize="200,22">
+      <sap2010:ViewStateData Id="VatInvoiceActivity_2" sap:VirtualizedContainerService.HintSize="200,22">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="OpenActivity_1" sap:VirtualizedContainerService.HintSize="200,53" />
       <sap2010:ViewStateData Id="TypeActivity_1" sap:VirtualizedContainerService.HintSize="210,100" />
       <sap2010:ViewStateData Id="TypeActivity_2" sap:VirtualizedContainerService.HintSize="210,100" />
       <sap2010:ViewStateData Id="TypeActivity_3" sap:VirtualizedContainerService.HintSize="210,100" />
       <sap2010:ViewStateData Id="TypeActivity_4" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="UserInputBoxActivity_1" sap:VirtualizedContainerService.HintSize="200,22">
+      <sap2010:ViewStateData Id="UserInputBoxActivity_1" sap:VirtualizedContainerService.HintSize="200,53">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -223,8 +223,8 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">390,269</av:Point>
-            <av:Size x:Key="ShapeSize">200,22</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">490,291 490,320</av:PointCollection>
+            <av:Size x:Key="ShapeSize">200,53</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">490,322 490,320</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
@@ -240,45 +240,45 @@
       <sap2010:ViewStateData Id="FlowStep_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">75,520</av:Point>
+            <av:Point x:Key="ShapeLocation">75,490</av:Point>
             <av:Size x:Key="ShapeSize">210,100</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">285,570 332,570 332,190 385,190</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">285,540 335,540 335,190 385,190</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="FlowStep_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">75,390</av:Point>
+            <av:Point x:Key="ShapeLocation">75,360</av:Point>
             <av:Size x:Key="ShapeSize">210,100</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">180,490 180,520</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">180,460 180,490</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="FlowStep_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">75,260</av:Point>
+            <av:Point x:Key="ShapeLocation">75,230</av:Point>
             <av:Size x:Key="ShapeSize">210,100</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">180,360 180,390</av:PointCollection>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="FlowStep_14">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">80,209</av:Point>
-            <av:Size x:Key="ShapeSize">200,22</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">180,231 180,260</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">180,330 180,360</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
       <sap2010:ViewStateData Id="FlowStep_13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">80,123.5</av:Point>
+            <av:Point x:Key="ShapeLocation">80,143.5</av:Point>
             <av:Size x:Key="ShapeSize">200,53</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">180,176.5 180,209</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">180,196.5 180,230</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_16">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">80,89</av:Point>
+            <av:Size x:Key="ShapeSize">200,22</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">180,111 180,143.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
@@ -286,15 +286,15 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <av:Point x:Key="ShapeLocation">150,22.5</av:Point>
+            <av:Point x:Key="ShapeLocation">300,2.5</av:Point>
             <av:Size x:Key="ShapeSize">60,75</av:Size>
             <x:Double x:Key="Height">725</x:Double>
-            <av:PointCollection x:Key="ConnectorLocation">180,97.5 180,123.5</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">300,40 180,40 180,89</av:PointCollection>
             <x:Double x:Key="Width">1068</x:Double>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,841" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="1122,1121" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
