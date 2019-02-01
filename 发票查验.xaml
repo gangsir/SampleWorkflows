@@ -1,7 +1,7 @@
 ﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="RehostedWorkflowDesigner.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="RehostedWorkflowDesigner.Workflow_1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:fab="clr-namespace:Friday.ActivityLibrary.BasicActivities;assembly=ActivityLibrary"
+ xmlns:fab="clr-namespace:Friday.ActivityLibrary.WebAction;assembly=ActivityLibrary"
  xmlns:fam="clr-namespace:Friday.ActivityLibrary.Miscellaneous;assembly=ActivityLibrary"
  xmlns:fao="clr-namespace:Friday.ActivityLibrary.OcrActivities;assembly=ActivityLibrary"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
