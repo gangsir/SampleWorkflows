@@ -1,9 +1,9 @@
 ﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="RehostedWorkflowDesigner.Workflow" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="RehostedWorkflowDesigner.Workflow_1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:fab="clr-namespace:Friday.ActivityLibrary.WebAction;assembly=ActivityLibrary"
  xmlns:fam="clr-namespace:Friday.ActivityLibrary.Miscellaneous;assembly=ActivityLibrary"
  xmlns:fao="clr-namespace:Friday.ActivityLibrary.OcrActivities;assembly=ActivityLibrary"
+ xmlns:faw="clr-namespace:Friday.ActivityLibrary.WebAction;assembly=ActivityLibrary"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
  xmlns:s="clr-namespace:System;assembly=mscorlib"
@@ -37,7 +37,7 @@
     </Flowchart.Variables>
     <Flowchart.StartNode>
       <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_2">
-        <fab:OpenActivity DisplayName="打开浏览器" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" TabId="2073" />
+        <faw:OpenActivity OpenerTabId="{x:Null}" guid="{x:Null}" DisplayName="打开网站" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" TabId="2073" />
         <FlowStep.Next>
           <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_1">
             <ForEach x:TypeArguments="x:String" DisplayName="重复验证发票" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
@@ -50,8 +50,8 @@
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                 </ActivityAction.Argument>
-                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
-                  <fao:VatInvoiceActivity DisplayName="识别发票信息" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_1">
+                <Sequence DisplayName="提交发票信息流程" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <fao:VatInvoiceActivity guid="{x:Null}" DisplayName="识别发票信息" sap2010:WorkflowViewState.IdRef="VatInvoiceActivity_1">
                     <fao:VatInvoiceActivity.ImgPath>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">@"C:\temp\SampleWorkflows\data\invoice\ocr_test_image"+item+".JPG"</mca:CSharpValue>
@@ -78,55 +78,51 @@
                       </OutArgument>
                     </fao:VatInvoiceActivity.TotalAmount>
                   </fao:VatInvoiceActivity>
-                  <fab:TypeActivity AbsoluteXPath="id(&quot;fpdm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/2d5f021d-466e-4f1d-b7bd-46ce6e8260a8.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_1" Operation="输入发票代码" TabId="2073" XpathList="[&quot;id(\&quot;fpdm\&quot;)&quot;]">
-                    <fab:TypeActivity.Value>
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fpdm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/2d5f021d-466e-4f1d-b7bd-46ce6e8260a8.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_1" Operation="输入发票代码" TabId="2073" XpathList="[&quot;id(\&quot;fpdm\&quot;)&quot;]">
+                    <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">num</mca:CSharpValue>
                       </InArgument>
-                    </fab:TypeActivity.Value>
-                  </fab:TypeActivity>
-                  <fab:TypeActivity AbsoluteXPath="id(&quot;fphm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/c7e556f3-0457-4fe5-bd58-dda4662220d4.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_2" Operation="输入发票号" TabId="2073" XpathList="[&quot;id(\&quot;fphm\&quot;)&quot;]">
-                    <fab:TypeActivity.Value>
+                    </faw:TypeActivity.Value>
+                  </faw:TypeActivity>
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fphm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/c7e556f3-0457-4fe5-bd58-dda4662220d4.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_2" Operation="输入发票号" TabId="2073" XpathList="[&quot;id(\&quot;fphm\&quot;)&quot;]">
+                    <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">code</mca:CSharpValue>
                       </InArgument>
-                    </fab:TypeActivity.Value>
-                  </fab:TypeActivity>
-                  <fab:TypeActivity AbsoluteXPath="id(&quot;kprq&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/5d3f4ec4-5845-4ce4-9d1e-2fb32af01544.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_3" Operation="输入发票日期" TabId="2073" XpathList="[&quot;id(\&quot;kprq\&quot;)&quot;]">
-                    <fab:TypeActivity.Value>
+                    </faw:TypeActivity.Value>
+                  </faw:TypeActivity>
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kprq&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/5d3f4ec4-5845-4ce4-9d1e-2fb32af01544.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_3" Operation="输入发票日期" TabId="2073" XpathList="[&quot;id(\&quot;kprq\&quot;)&quot;]">
+                    <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">invdate.ToString().Substring(0,4)+invdate.ToString().Substring(5,2)+invdate.ToString().Substring(8,2)</mca:CSharpValue>
                       </InArgument>
-                    </fab:TypeActivity.Value>
-                  </fab:TypeActivity>
-                  <fab:TypeActivity AbsoluteXPath="id(&quot;kjje&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/19847b67-80fc-4bc7-84e6-5ab009a5bd24.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_4" Operation="输入发票金额" TabId="2073" XpathList="[&quot;id(\&quot;kjje\&quot;)&quot;]">
-                    <fab:TypeActivity.Value>
+                    </faw:TypeActivity.Value>
+                  </faw:TypeActivity>
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kjje&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/19847b67-80fc-4bc7-84e6-5ab009a5bd24.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_4" Operation="输入发票金额" TabId="2073" XpathList="[&quot;id(\&quot;kjje\&quot;)&quot;]">
+                    <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">value.ToString()</mca:CSharpValue>
                       </InArgument>
-                    </fab:TypeActivity.Value>
-                  </fab:TypeActivity>
-                  <fab:ClickActivity AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/f4d67841-b70b-42be-a922-7fb73e53bf23.jpg" DisplayName="CLICK" sap2010:WorkflowViewState.IdRef="ClickActivity_5" Operation="点击校验码输入框" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]" />
-                  <fam:UserInputBoxActivity Title="{x:Null}" DisplayName="用户输入弹出框" sap2010:WorkflowViewState.IdRef="UserInputBoxActivity_1" Prompt="请输入验证码">
+                    </faw:TypeActivity.Value>
+                  </faw:TypeActivity>
+                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/f4d67841-b70b-42be-a922-7fb73e53bf23.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_5" Operation="点击校验码输入框" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]" />
+                  <fam:UserInputBoxActivity Title="{x:Null}" guid="{x:Null}" DisplayName="用户输入弹出框" sap2010:WorkflowViewState.IdRef="UserInputBoxActivity_1" Prompt="请输入验证码">
                     <fam:UserInputBoxActivity.Output>
                       <OutArgument x:TypeArguments="x:String">
                         <mca:CSharpReference x:TypeArguments="x:String">veri</mca:CSharpReference>
                       </OutArgument>
                     </fam:UserInputBoxActivity.Output>
                   </fam:UserInputBoxActivity>
-                  <fab:TypeActivity AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/4cdca533-74b3-4a20-8202-db23cfb9ca4f.jpg" DisplayName="输入" sap2010:WorkflowViewState.IdRef="TypeActivity_5" Operation="输入校验码" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]">
-                    <fab:TypeActivity.Value>
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/4cdca533-74b3-4a20-8202-db23cfb9ca4f.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_5" Operation="输入校验码" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]">
+                    <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">veri</mca:CSharpValue>
                       </InArgument>
-                    </fab:TypeActivity.Value>
-                  </fab:TypeActivity>
-                  <fab:ClickActivity AbsoluteXPath="id(&quot;checkfp&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/712e0cc6-b258-49b8-b02d-92c690edeea7.jpg" DisplayName="点击" sap2010:WorkflowViewState.IdRef="ClickActivity_6" Operation="点击&quot;查 验&quot;按钮" TabId="2073" XpathList="[&quot;id(\&quot;checkfp\&quot;)&quot;]" />
-                  <Delay DisplayName="延时" sap2010:WorkflowViewState.IdRef="Delay_1">
-                    <InArgument x:TypeArguments="x:TimeSpan">
-                      <mca:CSharpValue x:TypeArguments="x:TimeSpan">TimeSpan.FromSeconds(2)</mca:CSharpValue>
-                    </InArgument>
-                  </Delay>
+                    </faw:TypeActivity.Value>
+                  </faw:TypeActivity>
+                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;checkfp&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/712e0cc6-b258-49b8-b02d-92c690edeea7.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_6" Operation="点击&quot;查 验&quot;按钮" TabId="2073" XpathList="[&quot;id(\&quot;checkfp\&quot;)&quot;]" />
+                  <Delay DisplayName="延时" Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_1" />
                 </Sequence>
               </ActivityAction>
             </ForEach>
@@ -136,21 +132,21 @@
     </Flowchart.StartNode>
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
-    <sads:DebugSymbol.Symbol>dzNDOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zph43lpI3pqozor4E05byg5Y+R56WoLnhhbWwbHgOMAQ8CAQEoCSiyAQIBaCsNhAEXAgECLhMugAECAWI1EYIBHAIBAzYTUCwCAT5RE1cmAgE2WBNeJgIBLl8TZSYCASZmE2wmAgEebRNt3AICAR1uE3QuAgEVdRN7JgIBDXwTfOwCAgEMfROBARsCAQRNGU1lAgFbSBlIYwIBVEMZQ2gCAU05GTmZAQIBRj4ZPmICAT9UGVRaAgE3WxlbWwIBL2IZYrwBAgEnaRlpZwIBH3EZcWMCARZ4GXhbAgEOfxd/bgIBBQ==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dzNjOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zph43lpI3pqozor4E05byg5Y+R56WoLnhhbWweHgOIAQ8CAQEoCSjYAQIBYysNgAEXAgECKM8BKNUBAgFlKKUBKMgBAgFkLhMugAECAV01EX4cAgEDNhNQLAIBOVETVyYCATFYE14mAgEpXxNlJgIBIWYTbCYCARltE231AgIBGG4TdC4CAQ91E3smAgEHfBN8iAMCAQZ9E31rAgEETRlNZQIBVkgZSGMCAU9DGUNoAgFIORk5mQECAUE+GT5iAgE6VBlUWgIBMlsZW1sCASpiGWK8AQIBImkZaWcCARpupAFurAECARdxGXFjAgEQeBl4WwIBCH00fT4CAQU=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="OpenActivity_1" sap:VirtualizedContainerService.HintSize="200,53" />
-      <sap2010:ViewStateData Id="VatInvoiceActivity_1" sap:VirtualizedContainerService.HintSize="210,22">
+      <sap2010:ViewStateData Id="OpenActivity_1" sap:VirtualizedContainerService.HintSize="206,72" />
+      <sap2010:ViewStateData Id="VatInvoiceActivity_1" sap:VirtualizedContainerService.HintSize="214,55">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TypeActivity_1" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="TypeActivity_2" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="TypeActivity_3" sap:VirtualizedContainerService.HintSize="210,100">
+      <sap2010:ViewStateData Id="TypeActivity_1" sap:VirtualizedContainerService.HintSize="214,119" />
+      <sap2010:ViewStateData Id="TypeActivity_2" sap:VirtualizedContainerService.HintSize="214,119" />
+      <sap2010:ViewStateData Id="TypeActivity_3" sap:VirtualizedContainerService.HintSize="214,119">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -158,36 +154,36 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TypeActivity_4" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="ClickActivity_5" sap:VirtualizedContainerService.HintSize="210,83" />
-      <sap2010:ViewStateData Id="UserInputBoxActivity_1" sap:VirtualizedContainerService.HintSize="210,22">
+      <sap2010:ViewStateData Id="TypeActivity_4" sap:VirtualizedContainerService.HintSize="214,119" />
+      <sap2010:ViewStateData Id="ClickActivity_5" sap:VirtualizedContainerService.HintSize="214,83" />
+      <sap2010:ViewStateData Id="UserInputBoxActivity_1" sap:VirtualizedContainerService.HintSize="214,55">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="TypeActivity_5" sap:VirtualizedContainerService.HintSize="210,100" />
-      <sap2010:ViewStateData Id="ClickActivity_6" sap:VirtualizedContainerService.HintSize="210,82" />
-      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="210,22">
+      <sap2010:ViewStateData Id="TypeActivity_5" sap:VirtualizedContainerService.HintSize="214,119" />
+      <sap2010:ViewStateData Id="ClickActivity_6" sap:VirtualizedContainerService.HintSize="214,83" />
+      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="214,22">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="232,1215">
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="236,1377">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="200,53" />
+      <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="291,1522" />
       <sap2010:ViewStateData Id="FlowStep_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">200,216</av:Point>
+            <av:Point x:Key="ShapeLocation">201.5,246</av:Point>
             <av:Size x:Key="ShapeSize">200,53</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -195,9 +191,9 @@
       <sap2010:ViewStateData Id="FlowStep_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">200,114</av:Point>
-            <av:Size x:Key="ShapeSize">200,53</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,166 300,216</av:PointCollection>
+            <av:Point x:Key="ShapeLocation">198.5,124</av:Point>
+            <av:Size x:Key="ShapeSize">206,72</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">301.5,196 301.5,246</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
@@ -207,11 +203,11 @@
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
             <av:Size x:Key="ShapeSize">60,75</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,77.1666666666667 300,114</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 301.5,107.5 301.5,124</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="654,716" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="654,756" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
