@@ -37,7 +37,7 @@
     </Flowchart.Variables>
     <Flowchart.StartNode>
       <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_2">
-        <faw:OpenActivity OpenerTabId="{x:Null}" guid="{x:Null}" DisplayName="打开网站" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" TabId="2073" />
+        <faw:OpenActivity OpenerTabId="{x:Null}" guid="{x:Null}" DisplayName="打开网站" sap2010:WorkflowViewState.IdRef="OpenActivity_1" Operation="打开国税发票查验网站" PageUrl="https://inv-veri.chinatax.gov.cn/" />
         <FlowStep.Next>
           <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_1">
             <ForEach x:TypeArguments="x:String" DisplayName="重复验证发票" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
@@ -78,35 +78,35 @@
                       </OutArgument>
                     </fao:VatInvoiceActivity.TotalAmount>
                   </fao:VatInvoiceActivity>
-                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fpdm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/2d5f021d-466e-4f1d-b7bd-46ce6e8260a8.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_1" Operation="输入发票代码" TabId="2073" XpathList="[&quot;id(\&quot;fpdm\&quot;)&quot;]">
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fpdm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/2d5f021d-466e-4f1d-b7bd-46ce6e8260a8.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_1" Operation="输入发票代码" XpathList="[&quot;id(\&quot;fpdm\&quot;)&quot;]">
                     <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">num</mca:CSharpValue>
                       </InArgument>
                     </faw:TypeActivity.Value>
                   </faw:TypeActivity>
-                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fphm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/c7e556f3-0457-4fe5-bd58-dda4662220d4.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_2" Operation="输入发票号" TabId="2073" XpathList="[&quot;id(\&quot;fphm\&quot;)&quot;]">
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;fphm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/c7e556f3-0457-4fe5-bd58-dda4662220d4.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_2" Operation="输入发票号" XpathList="[&quot;id(\&quot;fphm\&quot;)&quot;]">
                     <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">code</mca:CSharpValue>
                       </InArgument>
                     </faw:TypeActivity.Value>
                   </faw:TypeActivity>
-                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kprq&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/5d3f4ec4-5845-4ce4-9d1e-2fb32af01544.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_3" Operation="输入发票日期" TabId="2073" XpathList="[&quot;id(\&quot;kprq\&quot;)&quot;]">
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kprq&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/5d3f4ec4-5845-4ce4-9d1e-2fb32af01544.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_3" Operation="输入发票日期" XpathList="[&quot;id(\&quot;kprq\&quot;)&quot;]">
                     <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">invdate.ToString().Substring(0,4)+invdate.ToString().Substring(5,2)+invdate.ToString().Substring(8,2)</mca:CSharpValue>
                       </InArgument>
                     </faw:TypeActivity.Value>
                   </faw:TypeActivity>
-                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kjje&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/19847b67-80fc-4bc7-84e6-5ab009a5bd24.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_4" Operation="输入发票金额" TabId="2073" XpathList="[&quot;id(\&quot;kjje\&quot;)&quot;]">
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;kjje&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/19847b67-80fc-4bc7-84e6-5ab009a5bd24.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_4" Operation="输入发票金额" XpathList="[&quot;id(\&quot;kjje\&quot;)&quot;]">
                     <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">value.ToString()</mca:CSharpValue>
                       </InArgument>
                     </faw:TypeActivity.Value>
                   </faw:TypeActivity>
-                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/f4d67841-b70b-42be-a922-7fb73e53bf23.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_5" Operation="点击校验码输入框" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]" />
+                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/f4d67841-b70b-42be-a922-7fb73e53bf23.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_5" Operation="点击校验码输入框" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]" />
                   <fam:UserInputBoxActivity Title="{x:Null}" guid="{x:Null}" DisplayName="用户输入弹出框" sap2010:WorkflowViewState.IdRef="UserInputBoxActivity_1" Prompt="请输入验证码">
                     <fam:UserInputBoxActivity.Output>
                       <OutArgument x:TypeArguments="x:String">
@@ -114,14 +114,14 @@
                       </OutArgument>
                     </fam:UserInputBoxActivity.Output>
                   </fam:UserInputBoxActivity>
-                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/4cdca533-74b3-4a20-8202-db23cfb9ca4f.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_5" Operation="输入校验码" TabId="2073" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]">
+                  <faw:TypeActivity guid="{x:Null}" AbsoluteXPath="id(&quot;yzm&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/4cdca533-74b3-4a20-8202-db23cfb9ca4f.jpg" DisplayName="输入" FrameId="0" sap2010:WorkflowViewState.IdRef="TypeActivity_5" Operation="输入校验码" XpathList="[&quot;id(\&quot;yzm\&quot;)&quot;]">
                     <faw:TypeActivity.Value>
                       <InArgument x:TypeArguments="x:String">
                         <mca:CSharpValue x:TypeArguments="x:String">veri</mca:CSharpValue>
                       </InArgument>
                     </faw:TypeActivity.Value>
                   </faw:TypeActivity>
-                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;checkfp&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/712e0cc6-b258-49b8-b02d-92c690edeea7.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_6" Operation="点击&quot;查 验&quot;按钮" TabId="2073" XpathList="[&quot;id(\&quot;checkfp\&quot;)&quot;]" />
+                  <faw:ClickActivity guid="{x:Null}" AbsoluteXPath="id(&quot;checkfp&quot;)" CtrlUrl="http://stellar-storage.oss-cn-shanghai.aliyuncs.com/image/2019-01-07/712e0cc6-b258-49b8-b02d-92c690edeea7.jpg" DisplayName="点击" FrameId="0" sap2010:WorkflowViewState.IdRef="ClickActivity_6" Operation="点击&quot;查 验&quot;按钮" XpathList="[&quot;id(\&quot;checkfp\&quot;)&quot;]" />
                   <Delay DisplayName="延时" Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_1" />
                 </Sequence>
               </ActivityAction>
