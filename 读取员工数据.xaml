@@ -48,7 +48,7 @@
       </FlowStep>
     </Flowchart.StartNode>
     <x:Reference>__ReferenceID0</x:Reference>
-    <sads:DebugSymbol.Symbol>dzBjOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zor7vlj5blkZjlt6XmlbDmja4yLnhhbWwEHAM0DwIBASQJLx8CAQIsDyyFAQIBBycPJ4UBAgED</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dy9jOlx0ZW1wXFNhbXBsZVdvcmtmbG93c1zor7vlj5blkZjlt6XmlbDmja4ueGFtbAQcAzQPAgEBJAkvHwIBAiwPLIUBAgEHJw8nhQECAQM=</sads:DebugSymbol.Symbol>
   </Flowchart>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
@@ -62,7 +62,7 @@
       <sap2010:ViewStateData Id="FlowStep_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">200,117.5</av:Point>
+            <av:Point x:Key="ShapeLocation">200,157.5</av:Point>
             <av:Size x:Key="ShapeSize">214,72</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -73,12 +73,12 @@
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
             <av:Size x:Key="ShapeSize">60,75</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 307,107.5 307,117.5</av:PointCollection>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,107.5 307,107.5 307,157.5</av:PointCollection>
             <x:Double x:Key="Width">886</x:Double>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="940,916" />
+      <sap2010:ViewStateData Id="RehostedWorkflowDesigner.Workflow_1" sap:VirtualizedContainerService.HintSize="940,796" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
