@@ -1,21 +1,41 @@
-承运人,航线名称,起运港,目的港,挂靠港
-"ANL(澳航)","American line","XIAMEN","MIAMI   FL","XIAMEN-SHENZHEN（CHIWAN）-HONGKONG-NEW YORK   NY-SAVANNAH   GA-MIAMI   FL"
-"ANL(澳航)","Mid-East Line","XIAMEN","Jebel Ali DUBAI","XIAMEN-SHANTOU-SHENZHEN（CHIWAN）-COLOMBO-NHAVA SHEVA-Jebel Ali DUBAI"
-"ANL(澳航)","American line","DALIAN","OAKLAND CA","DALIAN-TIANJIN（XINGANG）-SHANGHAI-NINGBO-LOS ANGELES CA-OAKLAND CA"
-"ANL(澳航)","Mid-East Line","SHANGHAI","PORT KELANG","SHANGHAI-NINGBO-FUQING-SHENZHEN（CHIWAN）-PORT KELANG-COLOMBO-NHAVA SHEVA-Jebel Ali DUBAI-KHOR FAKKAN-BANDAR ABBAS-PORT KELANG"
-"ANL(澳航)","Austrilian and Zelanian Line","YOKOHAMA","BRISBANE","YOKOHAMA-OSAKA-BUSAN-QINGDAO-SHANGHAI-NINGBO-XIAMEN-HONGKONG-KAOHSIUNG-MELBOURNE-SYDNEY-BRISBANE"
-"ANL(澳航)","Austrilian and Zelanian Line","YOKOHAMA","BRISBANE","YOKOHAMA-OSAKA-BUSAN-QINGDAO-SHANGHAI-NINGBO-XIAMEN-HONGKONG-KAOHSIUNG-MELBOURNE-SYDNEY-BRISBANE"
-"ANL(澳航)","Mediterranean Sea Line","QINGDAO","GENOA","QINGDAO-BUSAN-SHANGHAI-XIAMEN-NINGBO-HONGKONG-SHENZHEN（CHIWAN）-SINGAPORE-PORT KELANG-PORT SUEZ-DAMIETTA-MALTA-VALENCIA-BARCELONA-FOS-GENOA"
-"ANL(澳航)","Mid-East Line","XIAMEN","Jebel Ali DUBAI","XIAMEN-SHANTOU-SHENZHEN（CHIWAN）-COLOMBO-NHAVA SHEVA-Jebel Ali DUBAI"
-"ANL(澳航)","Mid-East Line","XIAMEN","Jebel Ali DUBAI","XIAMEN-SHANTOU-SHENZHEN（CHIWAN）-COLOMBO-NHAVA SHEVA-Jebel Ali DUBAI"
-"ANL(澳航)","American and Canadian line","XIAMEN","OAKLAND CA","XIAMEN-SHENZHEN（CHIWAN）-HONGKONG-SHENZHEN（YANTIAN）-LONG BEACH CA-OAKLAND CA"
-"ANL(澳航)","American and Canadian line","SHANGHAI","SHANGHAI","SHANGHAI-HONGKONG-SHENZHEN（YANTIAN）-LAZARO CARDENAS-PANAMA CITY-NEW YORK NY-NORFOLK VA-SAVONA-MIAMI FL-SHANGHAI"
-"ANL(澳航)","Mid-East Line","XIAMEN","Jebel Ali DUBAI","XIAMEN-SHANTOU-SHENZHEN（CHIWAN）-COLOMBO-NHAVA SHEVA-Jebel Ali DUBAI"
-"ANL(澳航)","Euro Line","SHANGHAI","ROTTERDAM","SHANGHAI-XIAMEN-GUANGZHOU（NANSHA）-SHENZHEN（YANTIAN）-PORT KELANG-ZEEBRUGGE-HAMBURG-FELIXSTOWE-ROTTERDAM"
-"ANL(澳航)","Euro Line","DALIAN","TALLINN","DALIAN-TIANJIN（XINGANG）-SHANGHAI-HONGKONG-SHENZHEN（YANTIAN）-PORT KELANG-SOUTHAMPTON-HAMBURG-GDANSK-SZCZECIN-AARHUS-Fredericia-COPENHAGEN-GOTHENBURG-HELSINGBORG-NORRKOPING-MALMO-STOCKHOLM-GAVLE-OSLO-MOSS-KRISTIANSAND-BREVIK-LARVIK-FREDRIKSTAD-BERGEN-STAVANGER-HAMINA-RAUMA-MANTYLUTO-TURKU-OULU-BREMEN-BREMERHAVEN-TALLINN"
-"ANL(澳航)","Euro Line","DALIAN","THAMESPORT","DALIAN-TIANJIN（XINGANG）-SHANGHAI-HONGKONG-SHENZHEN（YANTIAN）-PORT KELANG-SOUTHAMPTON-THAMESPORT"
-"ANL(澳航)","Austrilian and Zelanian Line","KAOHSIUNG","BRISBANE","KAOHSIUNG-HONGKONG-SHANGHAI-GUANGZHOU（NANSHA）-XIAMEN-SHENZHEN（SHEKOU）-HONGKONG-SYDNEY-MELBOURNE-BRISBANE"
-"ANL(澳航)","Austrilian and Zelanian Line","KAOHSIUNG","BRISBANE","KAOHSIUNG-HONGKONG-SHANGHAI-GUANGZHOU（NANSHA）-XIAMEN-SHENZHEN（SHEKOU）-HONGKONG-SYDNEY-MELBOURNE-BRISBANE"
-"ANL(澳航)","Euro Line","QINGDAO","PORT KELANG","QINGDAO-NINGBO-XIAMEN-SHENZHEN（CHIWAN）-SHENZHEN（YANTIAN）-LE HAVRE-DUNKERQUE-BREMERHAVEN-HAMBURG-ROTTERDAM-ANTWERP-ZEEBRUGGE-SOUTHAMPTON-PORT KELANG"
-"ANL(澳航)","Euro Line","NINGBO","PORT KELANG","NINGBO-SHANGHAI-SHENZHEN（YANTIAN）-HONGKONG-PORT KELANG-PORT SUEZ-LE HAVRE-ROTTERDAM-HAMBURG-ZEEBRUGGE-ANTWERP-PORT KELANG"
-"ANL(澳航)","Austrilian and Zelanian Line","YOKOHAMA","BRISBANE","YOKOHAMA-OSAKA-BUSAN-QINGDAO-SHANGHAI-NINGBO-XIAMEN-HONGKONG-KAOHSIUNG-MELBOURNE-SYDNEY-BRISBANE"
+船名,中文船名,进口/出口,预计到港时间,实际到港时间,预计离港时间,实际离港时间,码头泊位,港口,操作
+"THALASSA ELPIDA","海望轮","E1013/","19-02-19 22:15","","19-02-20 20:00","","10","宁波港吉码头","高亮&nbsp;&nbsp;
+                        定位"
+"HARMONY YUNGANG","和谐云港","19013W/19014E","19-02-20 00:00","","19-02-21 00:00","","","连云港码头","高亮&nbsp;&nbsp;
+                        定位"
+"EVER ETHIC","长德","1077E/","19-02-20 00:00","","","","海润码头","厦门海润集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"CHANG RONG 8","长荣8","1920/","19-02-20 00:00","","","","海润码头","厦门海润集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"ZHONG GU XIA MEN","中谷厦门","1904N/1905S","19-02-20 00:00","","19-02-21 00:00","","QQCTU四期","青岛前湾集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"APL PARIS","达飞美总巴黎","0SV0WN/0SV2DW","19-02-20 00:00","","19-02-21 00:00","","QQCTU四期","青岛前湾集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"METHI BHUM","长锦宏文","1911S/1911N","19-02-20 00:00","","19-02-21 00:00","","QQCT二期","青岛前湾集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"","金兴岭","V43/43","19-02-20 00:00","","","","","天津港第二港埠码头","高亮&nbsp;&nbsp;
+                        定位"
+"","麦斯","190215/0001","19-02-20 00:00","","","","","天津港第二港埠码头","高亮&nbsp;&nbsp;
+                        定位"
+"","合唱团","QJ01/QJ02","19-02-20 00:00","","","","","天津港第二港埠码头","高亮&nbsp;&nbsp;
+                        定位"
+"","幸福松","42A/42","19-02-20 00:00","","","","","天津港第二港埠码头","高亮&nbsp;&nbsp;
+                        定位"
+"","金穗","V1461A/V1461","19-02-20 00:00","","","","","天津港第二港埠码头","高亮&nbsp;&nbsp;
+                        定位"
+"XIN ZHOU SHAN","新舟山","1902AN/","19-02-20 00:00","","","","海润码头","厦门海润集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"XIN HONG XIANG 55","新鸿翔55","19009/","19-02-20 00:00","","","","海润码头","厦门海润集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"FANG ZHOU 29","方舟29","190219C/","19-02-20 00:00","19-02-20 00:00","","","海润码头","厦门海润集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
+"XINHONGXIANG78","新鸿翔78","9007S/","19-02-20 00:30","","19-02-20 05:00","","","宁波港吉码头","高亮&nbsp;&nbsp;
+                        定位"
+"XIEHAIMINGZHOU","协海明洲","907N/","19-02-20 02:00","","19-02-20 07:00","","2","宁波港吉码头","高亮&nbsp;&nbsp;
+                        定位"
+"LIANHE25","联合25","/907N","19-02-20 03:00","","19-02-20 06:00","","2","宁波港吉码头","高亮&nbsp;&nbsp;
+                        定位"
+"LIANHE25","联合25","/907N","19-02-20 03:30","","19-02-20 08:30","","7","宁波港吉码头","高亮&nbsp;&nbsp;
+                        定位"
+"YM WARMTH","煌明","017E/018W","19-02-20 05:00","","19-02-21 00:00","","QQCT三期","青岛前湾集装箱码头","高亮&nbsp;&nbsp;
+                        定位"
